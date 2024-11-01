@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "blend",
+	"version": "${version}",
+	"name": "blend",
+	"description": "",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/twenty48lol/Blend"
+	},
+	"license": "GPL-3.0",
+	"icon": "assets/blend/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "blend.Initializer",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"blend.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
